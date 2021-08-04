@@ -1,4 +1,4 @@
-FROM microsoft/dotnet-framework:4.7.2-sdk-windowsservercore-1803 AS build
+FROM mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019 AS build
 WORKDIR /app
 
 EXPOSE 8080
@@ -14,7 +14,7 @@ WORKDIR /app/projects
 RUN msbuild /p:Configuration=Release
 
 
-FROM microsoft/aspnet:4.7.2-windowsservercore-1803 AS runtime
+FROM mcr.microsoft.com/dotnet/framework/aspnet:4.7.2-windowsservercore-ltsc2019 AS runtime
 WORKDIR /inetpub/wwwroot
-COPY --from=build /app/publish 
+COPY --from=build /app/publish . 
 
