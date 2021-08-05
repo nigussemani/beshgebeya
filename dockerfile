@@ -4,7 +4,7 @@ WORKDIR /app
 EXPOSE 8080
 # copy csproj and restore as distinct layers
 COPY *.sln .
-COPY /src/*.csproj ./projects
+COPY *.csproj ./projects
 COPY *.config ./configurations
 RUN nuget restore
 
