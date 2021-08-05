@@ -1,0 +1,10 @@
+﻿FriendlyName: CBE
+Description: Provides the CBE payment methods.
+SystemName: SmartStore.CBE
+Group: Payment
+Version: 4.1.0
+MinAppVersion: 4.1.0
+DisplayOrder: 1
+FileName: SmartStore.PayPal.dll
+ResourceRootKey: Plugins.SmartStore.CBE
+Url: http://community.smartstore.com/marketplace/file/29-paypal-payment-plugins/

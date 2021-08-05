@@ -18,6 +18,7 @@ namespace SmartStore.PayPal
 {
     [SystemName("Widgets.PayPal")]
     [FriendlyName("PayPal")]
+    
     public class Plugin : BasePlugin, IWidget, ICookiePublisher
     {
         private readonly ICommonServices _services;

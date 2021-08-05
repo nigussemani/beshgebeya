@@ -481,6 +481,7 @@
 .marketplace-feed {
     grid-column: 1 / 13;
     grid-row: 8 / 9;
+    content-visibility: hidden;
 }
 
 .report-orders {
@@ -559,7 +560,7 @@
 
 @include media-breakpoint-up(xl) {
     .report-incomplete-orders {
-        grid-column: 1 / 9;
+        grid-column:  / 9;
     }
 
     .marketplace-feed {
@@ -568,7 +569,7 @@
     }
 
     .report-orders {
-        grid-column: 1 / 9;
+        grid-column:  / 9;
     }
 
     .report-bestsellers {
@@ -581,15 +582,15 @@
     }
 
     .report-customer-registrations {
-        grid-column: 1 / 9;
+        grid-column:  / 9;
     }
 
     .report-latest-orders {
-        grid-column: 1 / 9;
+        grid-column: / 9;
     }
 
     .report-store-statistics {
-        grid-column: 1 / 9;
+        grid-column:  / 9;
     }
 }
 
