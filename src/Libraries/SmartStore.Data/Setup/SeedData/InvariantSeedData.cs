@@ -516,7 +516,7 @@ namespace SmartStore.Data.Setup
                         IsPasswordProtected = false,
                         RenderAsWidget = true,
                         WidgetWrapContent = false,
-                        Title = "Welcome to our store",
+                        Title = "Welcome to Besh Gebeya",
                         Body = "<p>Online shopping is the process consumers go through to purchase products or services over the Internet. You can edit this in the admin site.</p></p>"
                     },
                 new Topic

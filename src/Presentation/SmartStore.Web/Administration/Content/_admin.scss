@@ -358,11 +358,11 @@ body {
 
     .navbar-brand > .navbar-img {
         // Edge cannot auto-scale SVGs. We need to provide both width and height.
-        height: 28px;
-        width: 33px;
+        height: 60px;
+        width: 100px;
 
         @include media-breakpoint-up(lg) {
-            height: 28px;
+            height: 60px;
             width: 160px;
         }
     }

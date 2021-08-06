@@ -447,7 +447,7 @@ namespace SmartStore.Web.Controllers
             var model = new ShopHeaderModel
             {
                 LogoUploaded = logo != null,
-                LogoTitle = store.Name
+                LogoTitle = "BESH GEBEYA" //store.Name
             };
 
             if (logo != null)

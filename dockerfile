@@ -3,9 +3,13 @@ WORKDIR C:\app
 
 EXPOSE 8080
 # copy csproj and restore as distinct layers
+
 COPY  *.sln   .
 COPY src\*.csproj .\projects\
 COPY src\*.config .\configurations\
+
+
+
 RUN nuget restore
 
 # copy everything else and build app
