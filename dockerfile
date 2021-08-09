@@ -1,23 +1,19 @@
 FROM  mcr.microsoft.com/dotnet/framework/sdk:4.7.2 AS build
-WORKDIR C:\app
+WORKDIR .\app
 
 EXPOSE 8080
+
 # copy csproj and restore as distinct layers
+COPY  src\*  .
 
-COPY  *.sln   .
-COPY src\*.csproj .\projects\
-COPY src\*.config .\configurations\
-
-
-
-RUN nuget restore
+RUN nuget restore SmartStoreNET.sln
 
 # copy everything else and build app
-COPY . C:\app
-RUN msbuild /p:OutputPath=C:\app\publish /p:Configuration=Release
+COPY . .
+RUN msbuild  SmartStoreNET.sln /p:OutputPath=.\app\publish /p:Configuration=Release
 
 
 FROM mcr.microsoft.com/dotnet/framework/aspnet:4.7.2-windowsservercore-ltsc2019 AS runtime
 WORKDIR /inetpub/wwwroot
-COPY --from=build C:\app\publish . 
+COPY --from=build .\app\publish . 
 
