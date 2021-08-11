@@ -1,0 +1,3 @@
+SmartStore.Shipping
+SmartStore.OfflinePayment
+SmartStore.PayPal
