@@ -1,0 +1,9 @@
+*
+!obj\Docker\publish\*
+!obj\Docker\empty\
+**/bin
+**/obj
+**/out
+**/.vscode
+**/.vs
+App_Data\Tenants\Default\AssetCache\administration-content-theme.scss\asset.css
