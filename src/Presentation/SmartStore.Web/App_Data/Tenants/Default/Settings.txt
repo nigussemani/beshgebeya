@@ -1,4 +1,4 @@
+
 AppVersion: 4.1.0.0
 DataProvider: sqlserver
-DataConnectionString: Data Source=localhost;Initial Catalog=SmartStore;Integrated Security=True;Persist Security Info=False;Enlist=False;Pooling=True;Min Pool Size=1;Max Pool Size=100;Connect Timeout=15;User Instance=False
-
+DataConnectionString: Data Source=3.15.46.18;Initial Catalog=SmartStore;User ID=sa;Password=yourStrong(!)Password
