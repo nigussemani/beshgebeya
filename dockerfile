@@ -11,9 +11,11 @@ WORKDIR ./src
 
 RUN nuget restore SmartStoreNET.sln
 
+WORKDIR ..
+
 # Build app
 
-RUN msbuild  ./Presentation/SmartStore.Web/SmartStore.Web.csproj /p:DeployOnBuild=true 
+RUN msbuild  ./SmartStoreNET.proj /p:DeployOnBuild=true 
 
 FROM mcr.microsoft.com/dotnet/framework/aspnet:4.7.2-windowsservercore-ltsc2019 AS runtime
 WORKDIR /inetpub/wwwroot
