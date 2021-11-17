@@ -1,4 +1,4 @@
 
 AppVersion: 4.1.0.0
 DataProvider: sqlserver
-DataConnectionString: Data Source=3.15.46.18;Initial Catalog=SmartStore;User ID=sa;Password=yourStrong(!)Password
+DataConnectionString: Data Source=13.58.226.212;Initial Catalog=SmartStore;User ID=sa;Password=yourStrong(!)Password
